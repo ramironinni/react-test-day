@@ -27,15 +27,15 @@ class CheckoutProgressBar extends React.Component {
     }
 
     render(){
-        return<div className="CheckoutProgressBar">
+        return <div className="CheckoutProgressBar">
             <div className="CheckoutProgressBarWrapper">
                 {this.stepMapToArr.map((step, index, arr) => {
-                    return <>
+                    return <React.Fragment key={index}>
                         <CheckoutProgressLine currentStep={this.state.currentStepIndex} elementStep={step} index={index} totalLength={arr.length}/>
                     {step.areTotalsVisible && 
                         <CheckoutProgressStep currentStep={this.state.currentStepIndex} elementStep={step} index={index}/>
                     }
-                    </>
+                    </React.Fragment>
                 })}
             </div> 
         </div>
