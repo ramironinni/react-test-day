@@ -1,0 +1,10 @@
+.StepName {
+    margin-top: 10px;
+    font-weight: 700;
+    width: max-content;
+    color: var(--secondary-dark-color);
+}
+
+.StepName--completed {
+    color: var(--input-border-color-focus);
+}

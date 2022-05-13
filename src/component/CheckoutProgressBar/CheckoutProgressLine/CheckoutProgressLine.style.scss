@@ -1,0 +1,26 @@
+.CheckoutProgressLineWrapper {
+    width: 100%;
+}
+
+.CheckoutProgressLine{
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-dark-color);
+}
+
+@keyframes fillTheBar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.CheckoutProgressLine--completed{
+    background-color: var(--primary-base-color);
+    animation-name: fillTheBar;
+    animation-duration: 1s;
+
+}

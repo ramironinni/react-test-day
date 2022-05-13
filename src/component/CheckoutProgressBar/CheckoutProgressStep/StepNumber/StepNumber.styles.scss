@@ -1,0 +1,37 @@
+// .StepNumberWrapper {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 30px;
+//     height: 30px;
+// }
+
+.StepNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    font-size: 17px;
+    color: var(--secondary-success-color);
+    background-color: var(--secondary-dark-color);
+}
+
+@keyframes changeCircleColor {
+    0% {
+        background-color: var(--secondary-dark-color);
+    }
+
+    100% {
+        background-color: var(--primary-base-color);
+    }
+}
+
+.StepNumber--completed {
+    background-color: var(--primary-base-color);
+    animation-name: changeCircleColor;
+    animation-duration: 1s;
+}
